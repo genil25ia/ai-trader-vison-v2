@@ -6,7 +6,7 @@ import pandas_ta as ta  # <--- MUDANÇA AQUI
 from datetime import datetime
 
 # Importação da biblioteca da Quotex
-from quotexapi.stable_api import Quotex
+from pyquotex.stable_api import Quotex
 
 # --- CONFIGURAÇÃO DE VARIÁVEIS DE AMBIENTE ---
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
