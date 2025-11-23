@@ -1,5 +1,5 @@
 pandas
 numpy
-pandas-ta
 requests
 quotexapi
+git+https://github.com/twopirllc/pandas-ta.git
