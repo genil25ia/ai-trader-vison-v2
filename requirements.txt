@@ -2,4 +2,4 @@ pandas
 numpy
 pandas_ta
 requests
-quotexapi
+git+https://github.com/user0608/pyquotex.git
