@@ -1,8 +1,5 @@
-# Bibliotecas essenciais
 pandas
 numpy
-TA-Lib
+pandas_ta
 requests
-
-# Biblioteca de conexão com a Quotex (Comunidade)
 pyquotex
