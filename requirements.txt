@@ -1,4 +1,3 @@
 pandas
 numpy
 requests
-git+https://github.com/dizcza/quotexapi.git@master
