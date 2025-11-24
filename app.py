@@ -6,7 +6,7 @@ import numpy as np
 from datetime import datetime
 
 # Importação da biblioteca da Quotex
-#from quotexapi.stable_api import Quotex
+from quotexapi.stable_api import Quotex
 
 # --- CONFIGURAÇÃO DE VARIÁVEIS ---
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -108,7 +108,7 @@ def gerar_sinal_chefao(df_m15, df_m5, df_m1):
 
 # --- LOOP PRINCIPAL ---
 async def main_loop():
-    if not TELEGRAM_BOT_TOKEN:
+    #if not TELEGRAM_BOT_TOKEN:
         print("ERRO: Variáveis não configuradas!")
         return
 
@@ -116,19 +116,19 @@ async def main_loop():
 # Inicia cliente Quotex
     #client = Quotex(email=QUOTEX_EMAIL, password=QUOTEX_PASSWORD, lang="pt")
     
-    try:
+   # try:
         # Tenta conectar
-        status = await client.connect()
+       # status = await client.connect()
         print(f"Tentativa de conexão: {status}")
         
         while True:
             df_m15, df_m5, df_m1 = await obter_dados_mercado(client)
             acao, detalhe = gerar_sinal_chefao(df_m15, df_m5, df_m1)
             
-            if acao in ["COMPRA", "VENDA"]:
+           # if acao in ["COMPRA", "VENDA"]:
                 enviar_sinal(detalhe, acao)
             else:
-                print(f"Monitorando... {acao} | {detalhe}")
+               # print(f"Monitorando... {acao} | {detalhe}")
             
             await asyncio.sleep(60)
 
