@@ -112,7 +112,7 @@ async def main_loop():
         print("ERRO: Variáveis não configuradas!")
         return
 
-PROMPTTEXTO, [23/11/2025 19:53]
+#PROMPTTEXTO, [23/11/2025 19:53]
 # Inicia cliente Quotex
     #client = Quotex(email=QUOTEX_EMAIL, password=QUOTEX_PASSWORD, lang="pt")
     
