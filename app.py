@@ -7,7 +7,7 @@ import numpy as np
 from datetime import datetime
 
 # Importação da biblioteca da Quotex
-from quotexapi.stable_api import Quotex
+#from quotexapi.stable_api import Quotex
 
 # --- CONFIGURAÇÃO DE VARIÁVEIS ---
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
@@ -115,7 +115,7 @@ async def main_loop():
 
 PROMPTTEXTO, [23/11/2025 19:53]
 # Inicia cliente Quotex
-    client = Quotex(email=QUOTEX_EMAIL, password=QUOTEX_PASSWORD, lang="pt")
+    #client = Quotex(email=QUOTEX_EMAIL, password=QUOTEX_PASSWORD, lang="pt")
     
     try:
         # Tenta conectar
