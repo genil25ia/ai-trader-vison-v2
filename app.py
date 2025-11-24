@@ -1,4 +1,3 @@
-PROMPTTEXTO, [23/11/2025 19:53]
 import asyncio
 import os
 import requests
